@@ -29,9 +29,9 @@ destination_container = ''
 
 ##processed_date = ''
 ##batch_month = ''
-##source_account = "pocstorage7730"
+##source_account = ""
 ##source_container = "raw"
-##destination_account = "pocstorage7730"
+##destination_account = ""
 ##destination_container = "landing"
 
 
@@ -46,7 +46,7 @@ landing_path = f"abfss://{destination_container}@{destination_account}.dfs.core.
 
 
 # Access keys
-storage_account_key = "TFQEY1fzaUUz+4Y/Ds5j0U1fIqazNVjEaggx01tC1Wgeej0GOCLoJL/eArBv5eVhahmVU4Mb18b/+AStlzan1g=="
+storage_account_key = ""
 account_fqdn = f"{source_account}.dfs.core.windows.net"
 
 # set authentication
