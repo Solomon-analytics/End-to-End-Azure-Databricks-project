@@ -44,7 +44,7 @@ partition_path = f"processing_date={today_date}/"
 
 
 # storage account details
-#storage_account_name = "pocstorage7730"
+#storage_account_name = ""
 #container_name = "landing"
 #container_bronze_name = "bronze"
 
@@ -55,7 +55,7 @@ partition_path = f"processing_date={today_date}/"
 
 
 # Access keys
-storage_account_key = "TFQEY1fzaUUz+4Y/Ds5j0U1fIqazNVjEaggx01tC1Wgeej0GOCLoJL/eArBv5eVhahmVU4Mb18b/+AStlzan1g=="
+storage_account_key = ""
 account_fqdn = f"{source_account}.dfs.core.windows.net"
 
 # set authentication
@@ -93,10 +93,6 @@ schema = StructType([
     StructField('birth_year', StringType(), True)
 ])
 
-
-# ### write customer_df into a temp view
-
-# In[7]:
 
 
 customer_df = spark.read.format('parquet').option("header", True).schema(schema).load(customer_lookup_path)
